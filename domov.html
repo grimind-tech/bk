@@ -386,51 +386,6 @@ Stylify.configure({ });
 <!---CV 2023--->
 
 
-<!--FAQ SECTION DELETE ME AFTERWARDS-->
-
-<div class="container text-grey mx-auto px-2 py-2" x-data="{
-  faqs: [
-      {
-          question: 'Prečo moje služby?',
-          answer: 'Ahoj ty rebel! 😎 Chceš modernú webstránku, ktorá ťa odliší od tvojich konkurentov, alebo by si si chcel prepracovať súčasnú stránku do ešte krajšieho a modernšieho dizajnu? Nech sa deje čo chce, ja ti s tým viem pomôcť! 👋 Ponúkam tvorbu webstránok aj tvorbu loga na mieru, aby si mohol získať ešte viac potenciálnych zákazníkov. Veď vieš, prvý dojem je vždy dôležitý, hlavne v biznise. Preto som tu pre teba aj so službami brandingu, aby si mohol vytvoriť nezameniteľný dizajn a pocit pre tvoj produkt. Budem tvoj sprievodca v svete webstránok a som tu, aby som ti pomohol vytvoriť najcoolovnejšiu stránku na celom internete! Bez ohľadu na to, či chceš zviditeľniť svojho psa v kozmonautskom kostýme alebo predstaviť klub dôchodcov v najmodernšom svetle, mám pre teba riešenie. Sledujem trendy v webdizajne, takže môžeš byť uistený, že tvoja stránka bude moderná a elegantná. A ak sa rozhodneš pracovať so mnou, moje kreatívne nápady ti prinesú viac štýlu ako víťazný gol Cristiano Ronalda! Spoločne vytvoríme niečo skvelé! 💪',
-          isOpen: true,
-      },
-      {
-          question: 'Skúsenosti? 💪',
-          answer: 'Kódim si doma ako blázon, tvorím webstránky pre radosť a kávové škvrny na tričku pre autentickosť. Môj hardvér neustále prežíva infarkt, ale mne to nevadí, pretože som pri tom šťastný ako dieťa na narodeninách. Ak máš chuť, nechaj sa inšpirovať mojou nadšenosťou a nechaj ma ti ukázať, aké výnimočné stránky dokážeme vytvoriť spolu! Mám už dosť skúseností s tvorbou webstránok a práve teraz sa venujem niekoľkým zaujímavým projektom. Pri mojej práci používam TailwindCSS, ktoré je ako stvorené pre moderné a jednoduché weby. Výsledok stojí za to a aj keď tvorba webstránok nie je lacná záležitosť, čas a úsilie, ktoré investujem, sa v budúcnosti určite oplatia. Okrem tvorby webstránok ponúkam aj služby tvorby loga, kde sa priamo zapájam do procesu, aby sme dosiahli presne to, čo potrebuješ. A ak by si chcel, pomôžem ti aj s copywritingom, aby tvoja stránka zaujala každého návštevníka a priviedla ho k nákupu. Však vieš, prvý dojem je dôležitý a ja sa postarám o to, aby bol skvelý. Tak sa neváhaj ozvať a spoločne vytvoríme niečo, čo bude úspešné a na čo budeš hrdý!.',
-          isOpen: false,
-      },
-      {
-          question: 'Hodnoty? ⭐',
-          answer: 'V oblasti IT mám už pár skúseností a som si istý, že moje služby ti prinesú veľa pozitívnych hodnôt. S mojou prácou budú spokojní nielen ty, ale aj tvoji zákazníci. U mňa máš istotu, že ti poskytnem modernú a kvalitnú webstránku, ktorá bude presne vyhovovať tvojim potrebám. A čo viac, môžeš sa spoľahnúť na mňa aj v budúcnosti, ak by sa trendy webstránok zmenili a ty by si znova potreboval zlepšiť svoju stránku. Pre mňa je totiž dôležité, aby sme spolu vytvorili niečo, na čo budeš hrdý a čo bude úspešné. Neboj sa ma kontaktovať, som tu pre teba.',
-          isOpen: false,
-      },
-  ]
-}">
-<h2 class="text-2xl font-bold text-center m-10">Často kladené otázky</h2>
-<div class="leading-loose text-lg mt-6">
-<template x-for="(faq, index) in faqs" :key="faq.question">
-<div>
-<button class="w-full font-bold py-3 flex justify-between items-center mt-4" :class="index !== faqs.length - 1 && 'border-b border-gray-400'" @click="faqs = faqs.map(f => ({ ...f, isOpen: f.question !== faq.question ? false : !f.isOpen}))">
-<!-- Specs has it that only one component can be open at a time and also you should be able to toggle the open state of the active component too -->
-<div x-text="faq.question"></div>
-<svg x-show="!faq.isOpen" class="fill-current" viewBox="0 0 24 24" width="24" height="24">
-  <path class="heroicon-ui" d="M12 22a10 10 0 110-20 10 10 0 010 20zm0-2a8 8 0 100-16 8 8 0 000 16zm1-9h2a1 1 0 010 2h-2v2a1 1 0 01-2 0v-2H9a1 1 0 010-2h2V9a1 1 0 012 0v2z" />
-</svg>
-<svg x-show="faq.isOpen" class="fill-current" viewBox="0 0 24 24" width="24" height="24">
-  <path class="heroicon-ui" d="M12 22a10 10 0 110-20 10 10 0 010 20zm0-2a8 8 0 100-16 8 8 0 000 16zm4-8a1 1 0 01-1 1H9a1 1 0 010-2h6a1 1 0 011 1z" />
-</svg>
-</button>
-
-<div class="text-gray-700 text-sm mt-2" x-text="faq.answer" x-show="faq.isOpen"></div>
-</div>
-</template>
-</div>
-</div>
-
-<!--FAQ SECTION DELETE ME AFTERWARDS-->
-
-
 
 <!--FOOTER 2023-->
 <footer class="bg-cover bg-center py-10" style="background-image: url('your-image-url');">
